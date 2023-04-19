@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charSet="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="generator" content="Gatsby 4.25.4" />
+    <meta name="theme-color" content="#2281C2" />
+    <meta data-react-helmet="true" charSet="utf-8" />
+    <meta data-react-helmet="true" name="google-site-verification"
+        content="4_wjl2_6-aIQRAzqg3lLPX9Sa78zxuJ_EbI_L-yOzoE" />
+    <meta data-react-helmet="true"
+        content="URL shortener free for transforming long, ugly links into nice, memorable and trackable short URLs. Use it to shorten links"
+        name="description" />
+    <meta data-react-helmet="true" content="URL Shortener Free" property="og:title" />
+    <meta data-react-helmet="true"
+        content="URL shortener free for transforming long, ugly links into nice, memorable and trackable short URLs. Use it to shorten links"
+        property="og:description" />
+    <!-- <meta data-react-helmet="true" property="og:image" content="https://free-url-shortener.rb.gy/url-shortener.png" />
+    <meta data-react-helmet="true" property="og:url" content="https://free-url-shortener.rb.gy" />
+    <meta data-react-helmet="true" property="og:type" content="website" />
+    <meta data-react-helmet="true" content="summary" name="twitter:card" /> -->
+    <meta data-react-helmet="true" content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="shortcut icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf_8lQOjKKlb_QLT0cv-dep8YCncPsnjpknMqUuGcs85Sh6_CCyvZF24OJC0wzzUNDg4eC6JMDGkM&ec=48665699"
+        type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 48
+        }
+    </style>
+</head>
+
+<body class="disabled-no-js">
+
+    <div id="pageloader"></div>
+    <script>
+        var loader = document.getElementById("pageloader");
+        window.addEventListener('load', function () { loader.style.display = "none" })
+    </script>
+
+    <div id="___gatsby">
+        <div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper">
+            <div>
+                <div style="transition:opacity 50ms ease-in-out;opacity:1">
+                    <div>
+                        <div id="mobile-nav"></div>
+                        <div class="form form-small-pad shorten-section section free-url-shortener">
+                            <h1 class="white-text">Free URL Shortener</h1>
+                            <div class="container hero">
+                                <div class="div_form_horizontal_form">
+                                    <div class="rebrand-link-block home">
+                                        <div class="w-form">
+                                            <div class="terms-copy terms-copy-variant w-hidden-small">
+                                                It is a free tool to shorten URLs. Create short &amp; memorable
+                                                links in seconds.<br />
+                                                <br />
+                                            </div>
+                                            <!-- Input from User  -->
+                                            <form id="wf-form-rebrand-link-form" name="wf-form-rebrand-link-form"
+                                                data-name="rebrand-link-form" action=" "
+                                                class="form-link-creation home">
+                                                <!-- <label for="url" class="text-indent">Destination</label> -->
+                                                <input type="text" class="form-link-creation-input w-input longURL"
+                                                    id="longURL" maxLength="212256" name="url" data-name="Url"
+                                                    placeholder="Enter URL to be Shorten" value="" autoComplete="off"
+                                                    autoCorrect="off" autoCapitalize="none" />
+                                                <input type="reset" value="Shorten URL"
+                                                    class="btn-primary-3 w-button btnIN" id="btnInput" />
+                                                <!-- Short URL</input> -->
+                                                <div class="g-recaptcha">
+                                                    <div></div>
+                                                </div>
+                                            </form>
+                                            <br>
+                                            <!-- Output from User -->
+
+                                            <form class="form-link-creation home" action="">
+                                                <input type="text" class="form-link-creation-input w-input "
+                                                    id="shortURL" maxLength="256" name="url" data-name="Url"
+                                                    placeholder="Shortened URL Display here" value="" autoComplete="off"
+                                                    autoCorrect="off" autoCapitalize="none" />
+                                                <!-- <input type="submit" value="Copy Short URL"
+                                                    class="btn-primary-3 w-button btnOut" id="btnOutput" /> -->
+                                                <span class="material-symbols-outlined btn-primary-3 w-button">
+                                                    content_copy
+                                                </span>
+                                                <div class="g-recaptcha">
+                                                    <div></div>
+                                                </div>
+                                            </form>
+
+                                            <!-- form ends here  -->
+
+                                            <div class="shortened-links-list"></div>
+                                            <div class="terms-copy">
+                                                By clicking Shorten URL, you get short url....
+                                                <a href="#" target="_blank" class="terms-link"
+                                                    rel="noreferrer noopener">Terms of Use</a>
+                                                , <a href="#" target="_blank" class="terms-link"
+                                                    rel="noreferrer noopener">Privacy Policy</a>
+                                                and <a href="#" target="_blank" class="terms-link"
+                                                    rel="noreferrer noopener">Cookie Policy. </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="section zebra">
+                            <div class="container">
+                                <div class="container-small-inside-center-720">
+                                    <h2 class="new_h1_dark no-margin">
+                                        <strong class="new_h2_dark">Simple URL shortener</strong>
+                                    </h2>
+                                    <br />
+                                    <p class="paragraph_dark_center">
+                                        <!-- <b>Free URL Shortener</b> -->
+                                        <!-- for transforming long, ugly links into nice, memorable and trackable short
+                                            URLs. Use it to shorten links for any social media platforms, blogs, SMS,
+                                            emails, ads, or pretty much anywhere else you want to share them. Twitter,
+                                            Facebook, YouTube, Instagram, WhatsApp, emails, SMS, videos. RB.GY is <b>the
+                                                best free alternative to generic URL shorteners like bitly and
+                                                tinyurl</b> -->
+                                        URL Shortener is a tool that takes a long URL and creates a shorter, easier
+                                        to share version. It is useful for sharing
+                                        long URLs on social media, emails, and other text-restrictive locations.
+                                        Some benefits of a URL Shortener include:
+                                        simplified links that are easy to remember, a useful tool for tracking click
+                                        analytics, and improved security by hiding
+                                        the original URL from onlookers.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="box" bis_skin_checked="1">
+                            <div id="row" bis_skin_checked="1">
+                                <div id="column" bis_skin_checked="1">
+                                    <div class="icon" bis_skin_checked="1"><img
+                                            src="https://www.shorturl.at/img/icon-like.png"></div>
+                                    <h3 class="aligncenter">Easy</h3>
+                                    <p class="aligncenter">ShortURL is easy and fast, enter the long link to get
+                                        your shortened link</p>
+                                </div>
+                                <div id="column" bis_skin_checked="1">
+                                    <div class="icon" bis_skin_checked="1"><img
+                                            src="https://www.shorturl.at/img/icon-url.png"></div>
+                                    <h3 class="aligncenter">Shortened</h3>
+                                    <p class="aligncenter">Use any link, no matter what size, ShortURL always
+                                        shortens</p>
+                                </div>
+                                <div id="column" bis_skin_checked="1">
+                                    <div class="icon" bis_skin_checked="1"><img
+                                            src="https://www.shorturl.at/img/icon-secure.png"></div>
+                                    <h3 class="aligncenter">Secure</h3>
+                                    <p class="aligncenter">It is fast and secure, our service have HTTPS protocol
+                                        and data encryption</p>
+                                </div>
+                                <div id="column" bis_skin_checked="1">
+                                    <div class="icon" bis_skin_checked="1"><img
+                                            src="https://www.shorturl.at/img/icon-statistics.png"></div>
+                                    <h3 class="aligncenter">Statistics</h3>
+                                    <p class="aligncenter">Check the amount of clicks that your shortened URL
+                                        received</p>
+                                </div>
+                                <div id="column" bis_skin_checked="1">
+                                    <div class="icon" bis_skin_checked="1"><img
+                                            src="https://www.shorturl.at/img/icon-unique.png"></div>
+                                    <h3 class="aligncenter">Reliable</h3>
+                                    <p class="aligncenter">All links that try to disseminate spam, viruses and
+                                        malware are deleted</p>
+                                </div>
+                                <div id="column" bis_skin_checked="1">
+                                    <div class="icon" bis_skin_checked="1"><img
+                                            src="https://www.shorturl.at/img/icon-responsive.png">
+                                    </div>
+                                    <h3 class="aligncenter">Devices</h3>
+                                    <p class="aligncenter">Compatible with smartphones, tablets and desktop</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Remove the container if you want to extend the Footer to full width. -->
+                        <!-- <div class="container my-"> -->
+                        <!-- Footer -->
+                        <footer class="text-center text-lg-start text-dark" style="background-color: #ECEFF1">
+                            <!-- Section: Social media -->
+
+                            <section class="d-flex justify-content-between p-4 text-white"
+                                style="background-color: #21D192">
+                                <!-- Left -->
+                                <div class="me-5">
+                                    <span>Get connected with us on social networks:</span>
+                                </div>
+                                <!-- Left -->
+
+                                <!-- Right -->
+                                <div>
+                                    <a href="" class="text-white me-4">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="" class="text-white me-4">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="" class="text-white me-4">
+                                        <i class="fab fa-google"></i>
+                                    </a>
+                                    <a href="" class="text-white me-4">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="" class="text-white me-4">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                    <a href="" class="text-white me-4">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                                <!-- Right -->
+                            </section>
+                            <!-- Section: Social media -->
+
+                            <!-- Section: Links  -->
+                            <section class="">
+                                <div class="container text-center text-md-start mt-5">
+                                    <!-- Grid row -->
+                                    <div class="row mt-3">
+                                        <!-- Grid column -->
+                                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                                            <!-- Content -->
+                                            <h4 class="text-uppercase fw-bold">Company name</h4>
+                                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                                            <p>
+                                                The URL generator is a simple tool that makes creating web addresses
+                                                for websites easy and quick. It takes a few simple
+                                                steps to generate a personalized URL for a website. First, enter the
+                                                domain name for the website, followed by a
+                                                preference for a user-friendly name to identify the page. Then,
+                                                additional subdirectories and parameters can be added if
+                                                desired. Once the URL is complete, click "generate" to generate the
+                                                personalized URL. This tool ensures that everyone’s
+                                                URLs are unique and easy to share and remember
+                                            </p>
+                                        </div>
+                                        <!-- Grid column -->
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                                            <!-- Links -->
+                                            <h5 class="text-uppercase fw-bold">Products</h5>
+                                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                                            <p>
+                                                <a href="#!" class="text-dark">Url shortner</a>
+                                            </p>
+                                            <p>
+                                                <a href="#!" class="text-dark">campare Dealer</a>
+                                            </p>
+                                            <p>
+                                                <a href="#!" class="text-dark">Weather App</a>
+                                            </p>
+                                            <p>
+                                                <a href="#!" class="text-dark">Gaming website</a>
+                                            </p>
+                                        </div>
+                                        <!-- Grid column -->
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                                            <!-- Links -->
+                                            <h5 class="text-uppercase fw-bold">Useful links</h5>
+                                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                                            <p>
+                                                <a href="#!" class="text-dark">Your Account</a>
+                                            </p>
+                                            <p>
+                                                <a href="#!" class="text-dark">Become an Affiliate</a>
+                                            </p>
+                                            <p>
+                                                <a href="#!" class="text-dark">Shipping Rates</a>
+                                            </p>
+                                            <p>
+                                                <a href="#!" class="text-dark">Help</a>
+                                            </p>
+                                        </div>
+                                        <!-- Grid column -->
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                                            <!-- Links -->
+                                            <h5 class="text-uppercase fw-bold">Contact</h5>
+                                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                                            <p><i class="fas fa-home mr-3"></i>Etah,Uttar Pradesh India</p>
+                                            <p><i class="fas fa-envelope mr-3"></i> info@devanshu.com</p>
+                                            <p><i class="fas fa-phone mr-3"></i> +91-8273245442</p>
+                                            <p><i class="fas fa-print mr-3"></i> +91-8273788547</p>
+                                        </div>
+                                        <!-- Grid column -->
+                                    </div>
+                                    <!-- Grid row -->
+                                </div>
+                            </section>
+                            <!-- Section: Links  -->
+
+                            <!-- Copyright -->
+                            <div class="text-center p-3 copyright-sec" style="background-color: rgba(0, 0, 0, 0.2)">
+                                © 2023 Copyright:
+                                <a class="text-dark" href="#">Url_Shortner.com</a>
+                            </div>
+                            <!-- Copyright -->
+                        </footer>
+                        <!-- Footer -->
+                    </div>
+                    <!-- End of .container -->
+</body>
+<script src="script.js"></script>
+
+</html>
